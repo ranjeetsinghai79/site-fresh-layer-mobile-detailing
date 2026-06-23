@@ -2,109 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "slate",
-  niche: "auto-detailing",
-  name: "Apex Auto Detailing",
-  tagline: "Every Detail. Perfected.",
-  phone: "(555) 012-3456",
-  phoneHref: "tel:+15550123456",
-  email: "hello@apexautodetail.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Modesto", "Manteca", "Pleasanton", "Livermore"],
-  license: "CA Business #012345",
-  since: "2014",
-  google_rating: "5.0",
-  review_count: "276",
-  emergency: false,
-  social: { google: "https://google.com", yelp: "https://yelp.com", facebook: "https://facebook.com" },
-},
+    name: "Fresh Layer Mobile Detailing",
+    tagline: "Your Car Deserves The Best",
+    phone: "(619) 433-8974",
+    phoneHref: "tel:+16194338974",
+    email: "info@freshlayerdetailing.com",
+    address: "San Diego, CA",
+    city: "San Diego",
+    serviceAreas: ["San Diego", "La Jolla", "Del Mar", "Coronado", "Rancho Santa Fe", "Poway"],
+    license: "Licensed & Insured",
+    since: "2015",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: false,
+    theme: "ocean",
+    niche: "auto-detailing",
+  },
 
   services: [
-  { icon: "sparkles", title: "Ceramic Coating", desc: "9H hardness nano-ceramic protection. 5-year warranty. Hydrophobic, scratch-resistant, showroom shine that lasts years.", urgent: false },
-  { icon: "star", title: "Paint Correction", desc: "Multi-stage machine polishing removes swirls, scratches, and oxidation. Restore your car's true shine.", urgent: false },
-  { icon: "zap", title: "Full Detail Package", desc: "Interior + exterior deep clean. Clay bar, hand wax, leather conditioning, engine bay. The full treatment.", urgent: false },
-  { icon: "droplets", title: "Interior Detail", desc: "Deep extraction shampoo, leather cleaning and conditioning, dashboard and trim dressing. Fresh from the inside.", urgent: false },
-  { icon: "shield", title: "PPF (Paint Film)", desc: "Self-healing urethane film for bumpers, hoods, mirrors. Invisible protection against rock chips and scratches.", urgent: false },
-  { icon: "sun", title: "Window Tinting", desc: "Premium ceramic tint. Heat rejection, UV protection, privacy. Legal limits honored. Lifetime warranty.", urgent: false },
-],
+    { icon: "sparkles", title: "Complete Mobile Detailing", desc: "Full-service detailing brought right to your location, making your car look brand new.", urgent: false },
+    { icon: "shield-check", title: "Ceramic Coating", desc: "Long-lasting protection and an incredible shine for your vehicle's paintwork.", urgent: false },
+    { icon: "wrench", title: "Paint Correction", desc: "Restore your car's finish by removing swirls, scratches, and imperfections.", urgent: false },
+    { icon: "truck", title: "RV & Boat Detailing", desc: "Specialized detailing services for your recreational vehicles and marine crafts.", urgent: false },
+    { icon: "star", title: "Exotic Car Detailing", desc: "Premium care for luxury and high-performance vehicles, preserving their pristine condition.", urgent: false },
+    { icon: "heart", title: "Interior Car Detailing", desc: "Deep cleaning and restoration of your car's interior for a fresh, hygienic cabin.", urgent: false }
+  ],
 
   testimonials: [
-  { name: "Marcus J.", location: "Tracy, CA", stars: 5, text: "Ceramic coated my BMW last year. Water beads off like nothing. Hasn't been to a car wash since. Worth every single dollar." },
-  { name: "Tyler R.", location: "Pleasanton, CA", stars: 5, text: "Paint correction on my 10-year-old Mustang made it look brand new. The swirl marks are completely gone. Insane transformation." },
-  { name: "David K.", location: "Stockton, CA", stars: 5, text: "Full interior detail after a road trip disaster. Kids had destroyed it. Looks like I just drove it off the lot. Literally perfect." },
-],
+    { name: "Sarah L.", location: "La Jolla", stars: 5, text: "Fresh Layer did an amazing job on my Tesla Model 3. The ceramic coating looks incredible and the car practically glows. They were punctual, professional, and the price was very fair for the quality of work. Highly recommend their mobile service!" },
+    { name: "Mark T.", location: "Del Mar", stars: 5, text: "I had Fresh Layer perform paint correction and a full detail on my classic Mustang. The results were beyond my expectations. My car hasn't looked this good since it rolled off the factory floor. The team was meticulous and clearly passionate about their craft." },
+    { name: "Jessica R.", location: "Coronado", stars: 5, text: "My SUV desperately needed an interior detail after a long road trip with kids and pets. Fresh Layer transformed it! Every stain was gone, and it smelled so fresh. The convenience of them coming to my home was a huge plus. Fantastic service!" }
+  ],
 
   trustBadges: [
-  "Ceramic Pro Certified", "Paint Correction Specialists", "5-Star Google Rated",
-  "5-Year Ceramic Warranty", "Mobile Service Available", "Free Estimates"
-],
+    "Mobile Service", "1,200+ Jobs Completed", "Exotic Car Specialists", "Gift Certificates Available", "Maintenance Memberships"
+  ],
 
   stats: [
-  {
-    "value": 5,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 1380,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 12,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 1200, label: "Jobs Completed", suffix: "+", decimals: 0 },
+    { value: 9, label: "Yrs Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI books detailing appointments, sends reminders, and collects post-service reviews via call, text, or WhatsApp. Zero missed bookings."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "truck", title: "Mobile Convenience", desc: "We come to you, saving you time and hassle with our on-location detailing services." },
+    { icon: "award", title: "Expert Technicians", desc: "Our detailers are highly trained and passionate about making your vehicle shine." },
+    { icon: "shield-check", title: "Premium Products", desc: "We use only the highest quality, professional-grade detailing products for superior results." },
+    { icon: "sparkles", title: "Exceptional Results", desc: "We guarantee a showroom finish, paying meticulous attention to every detail." },
+    { icon: "thumbs-up", title: "Customer Satisfaction", desc: "Your happiness is our priority; we strive to exceed your expectations every time." },
+    { icon: "clock", title: "Flexible Scheduling", desc: "Book an appointment that fits your busy schedule, at your home or office." }
+  ],
 
-  formServiceOptions: [
-  "Ceramic Coating",
-  "Paint Correction",
-  "Full Detail Package",
-  "Interior Detail",
-  "PPF (Paint Film)",
-  "Window Tinting"
-],
+  formServiceOptions: ["Complete Mobile Detailing", "Ceramic Coating", "Paint Correction", "RV & Boat Detailing", "Exotic Car Detailing", "Interior Car Detailing"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
